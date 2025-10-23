@@ -2,14 +2,14 @@
 // File: student_records.cpp
 //
 // GITHUB REPO LINK (paste your repo here):
-// https://github.com/your-username/your-repo   <-- LETAK LINK DI SINI
+//  https://github.com/afiqahbariza/student-records
 //
 // Grading system (5 GRED SAHAJA - CONFIRMED):
-// 80 – 100  = A  → 4.00
-// 70 – 79   = B  → 3.00
-// 60 – 69   = C  → 2.00
-// 50 – 59   = D  → 1.00
-// < 50      = F  → 0.00
+// 75 – 100  = A  → 4.00
+// 60 – 74   = B  → 3.00
+// 45 – 59   = C  → 2.00
+// 40 – 44   = D  → 1.00
+// < 39      = F  → 0.00
 // ===============================================
 
 #include <iostream>
@@ -37,10 +37,10 @@ struct Student {
 };
 
 pair<string, double> getGradePoint(int mark) {
-    if (mark >= 80) return make_pair("A", 4.00);
-    else if (mark >= 70) return make_pair("B", 3.00);
-    else if (mark >= 60) return make_pair("C", 2.00);
-    else if (mark >= 50) return make_pair("D", 1.00);
+    if (mark >= 75) return make_pair("A", 4.00);
+    else if (mark >= 60) return make_pair("B", 3.00);
+    else if (mark >= 45) return make_pair("C", 2.00);
+    else if (mark >= 40) return make_pair("D", 1.00);
     else return make_pair("F", 0.00);
 }
 
